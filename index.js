@@ -24,10 +24,3 @@ mongoose
 app.listen(port, () => {
     console.log(`Server Listen On ${port}  `)
 })
-
-const path = require("path")
-
-app.use(express.static(path.resolve(__dirname, "./client/dist")))
-app.get("*", function (req, res) {
-    res.sendFile(path.resolve(__dirname,"./client/dist", "index.html"))
-})
