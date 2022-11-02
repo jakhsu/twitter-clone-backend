@@ -22,8 +22,6 @@ const upload = multer({
 
 const router = express.Router();
 
-router.get("/", (req, res) => res.send("just dev."));
-
 router.get("/home", getHome);
 
 router.get("/user", getUser);
