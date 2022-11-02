@@ -125,9 +125,9 @@ export const logintoken = async (req, res) => {
 // Test route
 
 export const getTest = async (req, res) => {
-  console.log("receive a test call!")
-  res.send("I got your test call")
-
+  console.log("receive a test call!");
+  res.send("I got your test call");
+};
 // Get all tweets
 export const getHome = async (req, res) => {
   const tweets = await Tweet.find({});
