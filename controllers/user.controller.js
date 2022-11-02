@@ -125,8 +125,8 @@ export const logintoken = async (req, res) => {
 // Test route
 
 export const getTest = async (req, res) => {
-  res.search("this is a test route");
-};
+  console.log("receive a test call!")
+  res.send("I got your test call")
 
 // Get all tweets
 export const getHome = async (req, res) => {
