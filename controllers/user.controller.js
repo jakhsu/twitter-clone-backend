@@ -4,6 +4,7 @@ import path from "path";
 import sharp from "sharp";
 import fs from "fs";
 import { v4 } from "uuid";
+require("dotenv").config;
 
 import userSchema from "../schemas/user.js";
 import Tweet from "../schemas/tweet.js";
@@ -57,7 +58,6 @@ export const login = async (req, res) => {
 
 // Create Account
 export const register = async (req, res) => {
-  console.log("got a new user registration!");
   const { username, password, mail, name } = req.body;
   if (!username || !password || !mail || !name)
     return res.status(400).send("Bad field");
