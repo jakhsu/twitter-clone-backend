@@ -4,10 +4,10 @@ import path from "path";
 import sharp from "sharp";
 import fs from "fs";
 import { v4 } from "uuid";
-require("dotenv").config;
 
 import userSchema from "../schemas/user.js";
 import Tweet from "../schemas/tweet.js";
+dotenv.config();
 
 function uid() {
   return (
