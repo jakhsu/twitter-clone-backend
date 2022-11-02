@@ -3,6 +3,7 @@ import auth from "../middleware/auth.js";
 import multer from "multer";
 
 import {
+  getTest,
   createTweet,
   followManager,
   getHome,
@@ -21,6 +22,8 @@ const upload = multer({
 });
 
 const router = express.Router();
+
+router.get("/test", getTest);
 
 router.get("/home", getHome);
 

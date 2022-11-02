@@ -122,6 +122,12 @@ export const logintoken = async (req, res) => {
   });
 };
 
+// Test route
+
+export const getTest = async (req, res) => {
+  res.search("this is a test route");
+};
+
 // Get all tweets
 export const getHome = async (req, res) => {
   const tweets = await Tweet.find({});
